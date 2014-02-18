@@ -1,29 +1,72 @@
----
-layout: default
----
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>thought-stream by TheTribe</title>
 
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
-</div>
-<aside class="sidebar">
-  {% if site.blog_index_asides.size %}
-    {% include_array blog_index_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
+    <link rel="stylesheet" href="/thought-stream/stylesheets/styles.css">
+    <link rel="stylesheet" href="/thought-stream/stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>thought-stream</h1>
+        <p>I have ADD. Like, real bad. I need a stream-of-consciousness trapper so that I don't forget OOH! Something shiny!</p>
+        <p class="view"><a href="https://github.com/TheTribe/thought-stream">View the Project on GitHub <small>TheTribe/thought-stream</small></a></p>
+        <ul>
+          <li><a href="https://github.com/TheTribe/thought-stream/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/TheTribe/thought-stream/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/TheTribe/thought-stream">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="what" class="anchor" href="#what"><span class="octicon octicon-link"></span></a>What?</h1>
+
+<p>It's like a big bucket. For my stream of consciousness. But really useful. I'm not sure how to make this any clearer...</p>
+
+<h1>
+<a name="why" class="anchor" href="#why"><span class="octicon octicon-link"></span></a>Why?</h1>
+
+<p>Ah. Good question. I have what's called ADD, you see. It prevents me from being able to concentrate very hey that reminds me. Did you ever hear about how some monks can concentrate so hard, that they can slow their heart rate to almost nothing? My heart nearly stopped when I went skydiving, but that was from too much fun. Which I definitely had a lot of this weekend. Fun, I mean. Now I don't wanna go back to wohhhh wow, I did it again, didn't I?</p>
+
+<p>OK... what was I trying to do a minute ago?</p>
+
+<h2>
+<a name="links" class="anchor" href="#links"><span class="octicon octicon-link"></span></a>Links</h2>
+
+<ul>
+<li><a href="/thought-stream/blog">Blog</a></li>
+<li><a href="/thought-stream/visio">Interactive Visio Diagrams</a></li>
+<li><a href="/thought-stream/doxygen">Doxygen Pages</a></li>
+<li><a href="/thought-stream/dotcover">dotCover Report</a></li>
+<li><a href="/thought-stream/pickles">Pickles Report</a></li>
+<li><a href="/thought-stream/ndepend">NDepend Report</a></li>
+</ul><h3>
+Assorted bits of awesomeness will be added when available.</h3>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/TheTribe">TheTribe</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/thought-stream/javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-46816708-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
