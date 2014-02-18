@@ -1,29 +1,75 @@
----
-layout: default
----
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>hbase-client by TheTribe</title>
 
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
-</div>
-<aside class="sidebar">
-  {% if site.blog_index_asides.size %}
-    {% include_array blog_index_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">hbase-client</h1>
+        <p class="header">A simple set of .NET client libraries for HBase</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/TheTribe/hbase-client/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/TheTribe/hbase-client/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/TheTribe/hbase-client">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/TheTribe">TheTribe</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a name="hbase-client" class="anchor" href="#hbase-client"><span class="octicon octicon-link"></span></a>hbase-client</h1>
+
+<p>The Tribe needed a client wrapper for its shiny new HBase Stargate installation, and since a good one didn't exist, at least not for .NET, we wrote one! This site is all about that effort.</p>
+
+<p><a href="https://github.com/TheTribe/hbase-client/blob/master/authors.md">Authors and Contributors</a></p>
+
+<h2>
+<a name="content" class="anchor" href="#content"><span class="octicon octicon-link"></span></a>Content</h2>
+
+<ul>
+<li>Check out the <a href="/hbase-client/blog">hbase-client blog</a> for the latest news and insights into hbase-client.</li>
+<li>Community content is available on the <a href="https://github.com/TheTribe/hbase-client/wiki">hbase-client wiki</a>.</li>
+<li>
+<a href="/hbase-client/visio">Interactive Visio Diagrams</a> will be made available as they are created.</li>
+<li>
+<a href="/hbase-client/doxygen">API Documentation</a> is generated using Doxygen.</li>
+<li>
+<a href="/hbase-client/dotcover">Unit Test Coverage</a> is analyzed using dotCover.</li>
+<li>
+<a href="/hbase-client/pickles">Feature-level Unit Test Documentation</a> is generated using Pickles.</li>
+<li>
+<a href="/hbase-client/ndepend">Dependencies and Complexity</a> is analyzed using NDepend.</li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-46816708-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
